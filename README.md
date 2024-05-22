@@ -20,13 +20,12 @@
     });
 
 ## axios
-import:
+step-1:
                 import {
-                
                     useQuery,
                 } from '@tanstack/react-query'
 
-insite function:
+step-2:
 
                 axios.post('https://food-sharing-website-server-beta.vercel.app/MyRequestFoods', data, {
                             headers: {
@@ -42,7 +41,7 @@ insite main.jsx:
                         
                         } from '@tanstack/react-query'
             step:2
-            
+
                         <QueryClientProvider
                         client={queryClient}>
                         </QueryClientProvider>
