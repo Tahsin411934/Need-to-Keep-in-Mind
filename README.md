@@ -20,10 +20,29 @@
     });
 
 ## axios
+import:
+                import {
+                
+                    useQuery,
+                } from '@tanstack/react-query'
 
- axios.post('https://food-sharing-website-server-beta.vercel.app/MyRequestFoods', data, {
-            headers: {
-                "Content-Type": 'Application/json'
-            }
-        })
-    
+insite function:
+
+                axios.post('https://food-sharing-website-server-beta.vercel.app/MyRequestFoods', data, {
+                            headers: {
+                                "Content-Type": 'Application/json'
+                            }
+                 })
+                    
+insite main.jsx: 
+            step:1
+                    import {
+                        QueryClient,
+                        QueryClientProvider,
+                        
+                        } from '@tanstack/react-query'
+            step:2
+            
+                        <QueryClientProvider
+                        client={queryClient}>
+                        </QueryClientProvider>
