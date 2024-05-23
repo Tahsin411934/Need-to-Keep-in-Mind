@@ -25,7 +25,7 @@ step-2:
                         queryKey: ['AvailableFood'],
                         queryFn: async () => {
                             const res = await fetch('https://food-sharing-website-server-beta.vercel.app/Food/available' , {Credentials: true});
-                            return res.json();
+                            return res.data;
                         },
                     });
                     
