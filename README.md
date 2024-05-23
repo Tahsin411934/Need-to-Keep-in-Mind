@@ -36,7 +36,11 @@ step:1
                             QueryClientProvider,
                             
                             } from '@tanstack/react-query'
- step:2
+step: 2 
+
+                    const queryClient = new QueryClient()
+ 
+ step:3
 
                         <QueryClientProvider
                         client={queryClient}>
