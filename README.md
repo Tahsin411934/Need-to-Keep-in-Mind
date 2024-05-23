@@ -48,6 +48,24 @@ step: 2
 
 
 ## axios
+
+# useAxiosSecure Hook:
+
+                     import axios from "axios";
+
+                    export const axiosSecure = axios.create({
+                        baseURL : 'http://localhost:5000'
+                    })
+                    
+                    const useAxiosSecure = () => {
+                       return axiosSecure;
+                    };
+                    
+                    export default useAxiosSecure;
+
+
+
+
 # post:
                 axios.post('https://food-sharing-website-server-beta.vercel.app/MyRequestFoods', data, {
                                             headers: {
