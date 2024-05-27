@@ -24,13 +24,15 @@ step-2:
                 const { data, isLoading, error } = useQuery({
                         queryKey: ['AvailableFood'],
                         queryFn: async () => {
-                            const res = await fetch('https://food-sharing-website-server-beta.vercel.app/Food/available' , {Credentials: true});
+                            const res = await axios.get('https://food-sharing-website-server-beta.vercel.app/Food/available' , {Credentials: true});
                             return res.data;
                         },
                     });
                     
 insite main.jsx: 
 step:1
+
+                        
                            import {
                             QueryClient,
                             QueryClientProvider,
