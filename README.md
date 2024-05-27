@@ -31,7 +31,7 @@ step-2:
                     
 insite main.jsx: 
 step:1
-                        import {
+                           import {
                             QueryClient,
                             QueryClientProvider,
                             
