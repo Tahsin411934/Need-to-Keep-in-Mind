@@ -157,3 +157,36 @@ step: 2
       }
     });
   };
+
+
+
+  ## useContext :   
+   
+                    import { createContext } from "react";
+
+                        export const AuthContext = createContext(null)
+
+                        const AuthProvider1 = ( {children} ) => {
+                            const values = {
+                                name:'kuchu ali',
+                                id: '123'
+                            }
+                            return (
+                              <AuthContext.Provider value={values} >{children}</AuthContext.Provider>
+                            );
+                        };
+
+                        export default AuthProvider1;
+
+
+## insite Inner Main.jsx file : 
+
+                    <AuthProvider1><AuthProvider1/>
+
+                  
+## jakane use korbo:  
+
+                      import { useContext } from 'react'
+
+
+                      const {name} = useContext(AuthContext)
